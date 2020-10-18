@@ -1,0 +1,196 @@
+
+
+
+section{
+    margin: auto;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.conitiner{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1065px;
+    width: 485px;
+    text-align: center;
+
+}
+
+header{
+width: 480px;
+height: 75px;
+border: 1px solid black;
+line-height: 75px;
+background-color: gray;
+
+}
+
+.up{
+width: 480px;
+height: 150px;
+line-height: 150px;
+}
+
+.up-section{
+    width: 480px;
+    height: 150px;
+    
+    }
+
+.mid{
+    width: 480px;
+    height: 250px;
+
+}
+
+.mid-section{
+    width: 480px;
+    height: 125px;
+    line-height: 125px;
+
+}
+
+.down{
+    width: 480px;
+height: 500px;
+
+}
+
+.left{
+    float: left;
+    width: 240px;
+    height: 500px;
+
+}
+
+.right{
+    float: right;
+    width: 240px;
+    height: 500px;
+
+    
+}
+
+.downleft-section
+{
+    width: 240px;
+    height: 250px;  
+    line-height: 250px;
+}
+.downRight-section
+{
+    width: 240px;
+    height: 250px;
+    line-height: 250px;
+
+}
+
+
+footer{
+    width: 480px;
+    height: 80px;
+    clear: both;
+    border: 1px solid black;
+    line-height: 80px;
+    background-color: gray;
+
+
+}
+
+
+@media (min-width:768px) 
+{
+    
+    .conitiner{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 700px;
+        width: 960px;
+    }
+
+    section{
+        background-color: yellow;
+
+    }
+    
+header{
+    width: 960px;
+    height: 100px;
+    border: 1px solid black;
+    line-height: 100px;
+    background-color: yellow;
+
+    }
+    
+    .up{
+    width:200px;
+    height: 600px;
+    float: left;
+    }
+    
+    .up-section{
+        width:200px;
+        height: 600px;
+        line-height: 600px;
+        }
+    
+    .mid{
+        width: 760px;
+        height: 200px;
+    float: right;;
+    }
+    
+    .mid-section{
+        width: 380px;
+        height: 200px;
+        float: right;
+        line-height: 200px;
+    }
+    
+    .down{
+        width: 760px;
+    height: 250px;
+    float: right;
+    }
+    
+    
+    .left{
+        width: 380px;
+        height: 250px; 
+    }
+    .downleft-section
+    {
+        width: 190px;
+        height: 250px;
+        display: table-cell;
+        margin: 0px;
+  
+    }
+    .right{
+        width: 380px;
+        height: 250px; 
+    }
+    .downRight-section
+    {
+        width: 190px;
+        height: 250px;
+        display: table-cell;
+        margin: 0px;
+    }
+    
+    
+    footer{
+        display: inline-block;
+        width: 760px;
+        height: 150px;
+        clear: both;
+        border: 1px solid black;
+        line-height: 150px;
+        background-color: yellow;
+
+    }
+    
+
+}
