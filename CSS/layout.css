@@ -1,10 +1,9 @@
-
+@import "base.css";
 
 
 section{
     margin: auto;
     border: 1px solid black;
-    background-color: gray;
 }
 
 .conitiner{
@@ -12,9 +11,9 @@ section{
     margin-top: 50px;
     margin-bottom: 50px;
     height: 1065px;
-    width: 485px;
+    width: 480px;
     text-align: center;
-
+   
 }
 
 header{
@@ -22,85 +21,68 @@ width: 480px;
 height: 75px;
 border: 1px solid black;
 line-height: 75px;
-background-color: gray;
-
 }
 
-.up{
-width: 480px;
-height: 150px;
-line-height: 150px;
-}
-
-.up-section{
-    width: 480px;
-    height: 150px;
-    
+.mainGrid{
+    display: grid;
+    grid-template-rows: 150px 830px;
     }
 
-.mid{
+.left-section{
+    height: 150px;
     width: 480px;
-    height: 250px;
+    line-height: 150px;
+}
+
+.right-section{
+    display: grid;
+    width: 480px;
+    height: 830px;   
+    grid-template-rows:250px 500px 80px;
+}
+
+.top-section{
+    display: grid;
+    grid-template-rows: 125px 125px;
+}
+
+.top-grid{
+width:480px ;
+height: 125px;
+line-height: 125px;
 
 }
 
 .mid-section{
-    width: 480px;
-    height: 125px;
-    line-height: 125px;
-
+    display: grid;
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 250px 250px;
 }
 
-.down{
-    width: 480px;
-height: 500px;
-
-}
-
-.left{
-    float: left;
-    width: 240px;
-    height: 500px;
-
-}
-
-.right{
-    float: right;
-    width: 240px;
-    height: 500px;
-
-    
-}
-
-.downleft-section
-{
-    width: 240px;
-    height: 250px;  
-    line-height: 250px;
-}
-.downRight-section
-{
-    width: 240px;
+.mid-grid{
+    width:240px ;
     height: 250px;
     line-height: 250px;
 
-}
-
+    }
 
 footer{
     width: 480px;
     height: 80px;
-    clear: both;
     border: 1px solid black;
     line-height: 80px;
-    background-color: gray;
-
-
 }
 
 
-@media (min-width:768px) 
+
+
+@media (min-width:768px)  and (max-width:1280px) 
 {
+    
+    section{
+        margin: auto;
+        border: 1px solid black;
+    }
     
     .conitiner{
         margin: auto;
@@ -108,89 +90,161 @@ footer{
         margin-bottom: 50px;
         height: 700px;
         width: 960px;
-    }
-
-    section{
-        background-color: yellow;
-
+        text-align: center;
+       
     }
     
-header{
+    header{
     width: 960px;
     height: 100px;
     border: 1px solid black;
     line-height: 100px;
-    background-color: yellow;
+    background-color: gray;
+    
+    }
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 200px 760px;
+        }
+    
+    .left-section{
+        height: 600px;
+        width: 200px;
+        line-height: 600px;
 
     }
     
-    .up{
-    width:200px;
-    height: 600px;
-    float: left;
+    .right-section{
+        display: grid;
+        width: 760px;
+        height: 600px;   
+        grid-template-rows:200px 250px 150px;
     }
     
-    .up-section{
-        width:200px;
-        height: 600px;
-        line-height: 600px;
-        }
-    
-    .mid{
-        width: 760px;
+    .top-section{
         height: 200px;
-    float: right;;
+        width: 760px;
+        display: grid;
+        grid-template-columns: 380px 380px;
+    }
+    
+    .top-grid{
+    width:380px ;
+    height: 200px;
+    line-height: 200px;
+
     }
     
     .mid-section{
-        width: 380px;
-        height: 200px;
-        float: right;
-        line-height: 200px;
-    }
-    
-    .down{
+        height: 250px;
         width: 760px;
-    height: 250px;
-    float: right;
+        display: grid;
+        grid-template-columns: 190px 190px 190px 190px;
     }
     
-    
-    .left{
-        width: 380px;
-        height: 250px; 
-    }
-    .downleft-section
-    {
-        width: 190px;
+    .mid-grid{
+        width:190px ;
         height: 250px;
-        display: table-cell;
-        margin: 0px;
-  
-    }
-    .right{
-        width: 380px;
-        height: 250px; 
-    }
-    .downRight-section
-    {
-        width: 190px;
-        height: 250px;
-        display: table-cell;
-        margin: 0px;
-    }
-    
+        line-height: 250px;
+
+        }
     
     footer{
-        display: inline-block;
         width: 760px;
         height: 150px;
         clear: both;
         border: 1px solid black;
         line-height: 150px;
-        background-color: yellow;
+    }
+      
+}
+
+
+@media (min-width:1280px ) and (min-height:450px )
+{   
+    body{
+    background-color: red;
+    }
+    section{
+        margin: auto;
+        border: 1px solid black;
+    }
+    
+    .conitiner{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 860px;
+        width: 1280px;
+        text-align: center;
+       
+    }
+    
+    header{
+    width: 1280px;
+    height: 100px;
+    border: 1px solid black;
+    line-height: 100px;
+    background-color: gray;
+    
+    }
+    .mainGrid{
+        width: 1280px;
+        height: 760px;
+        display: grid;
+        grid-template-rows: 200px 560px;
+        }
+    
+    .left-section{
+        height: 200px;
+        width: 1280px;
+        line-height: 200px;
 
     }
     
+    .right-section{
+        display: grid;
+        width: 1280px;
+        height: 560px;   
+        grid-template-rows:200px 250px 150px;
+    }
+    
+    .top-section{
+        height: 200px;
+        width: 1280px;
+        display: grid;
+        grid-template-columns: 640px 640px;
+    }
+    
+    .top-grid{
+    width:640px ;
+    height: 200px;
+    line-height: 200px;
 
+    }
+    
+    .mid-section{
+        height: 300px;
+        width: 1280px;
+        display: grid;
+        grid-template-columns: 640px 640px;
+        grid-template-rows: 150px 150px;
+
+    }
+    
+    .mid-grid{
+        width:640px ;
+        height: 150px;
+        line-height: 150px;
+
+        }
+    
+    footer{
+        width: 1280px;
+        height: 60px;
+        clear: both;
+        border: 1px solid black;
+        line-height: 60px;
+    }
+      
 }

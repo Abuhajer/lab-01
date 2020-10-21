@@ -82,3 +82,47 @@ background-color:#FF4DF0 ;
         
 
 }
+
+
+
+@media (min-width:1280px ) and (min-height:450px )
+{      #a{
+    background-color:#56F6C4 ;
+    }
+    #b{
+        background-color:#69D690 ;
+    
+    }
+    #c{
+        background-color:#5EEB62 ;
+    
+    }
+    #d{
+        background-color:#7CD44A ;
+    
+    }
+    #e{
+        background-color:#D1F656 ;
+    
+    }
+    #f{
+        background-color:#49EDC0 ;
+    
+    }
+    #g{
+        background-color:#60D689 ;
+    
+    }
+    
+    #h{
+        background-color:#5AEB54 ;
+    
+    }
+    
+    #i{
+        background-color:#8AD442 ;
+    
+    }
+    
+
+}
